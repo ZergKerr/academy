@@ -1,4 +1,4 @@
-package by.academy.classwork.lesson1.copy;
+package by.academy.lesson2;
 
 public class Application {
 	
@@ -20,6 +20,7 @@ public class Application {
 		pushok1.grow(5);
 		
 		pushok.setMoney(105);
+		
 		
 		System.out.println(pushok.getMoney());
 	}
