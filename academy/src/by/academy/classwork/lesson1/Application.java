@@ -16,7 +16,7 @@ public class Application {
 		unnamed.grow(4);
 		
 		System.out.println("Unnamed cat`s age is equal to " + unnamed.age);
-		//System.out.println("Bug`s age is equal to " + pushok1.age);
+		System.out.println("Bug`s age is equal to " + pushok1.age);
 		pushok1.grow(5);
 	}
 }

@@ -20,8 +20,21 @@ public class Application {
 		pushok1.grow(5);
 		
 		pushok.setMoney(105);
-		
-		
 		System.out.println(pushok.getMoney());
+		
+		//Инициалы
+		pushok.setInitials("B");
+		System.out.println(pushok.getInitials());
+		
+		//Домашнее животное
+		pushok.setIsHomeAnimal(false);
+		//System.out.println(pushok.getIsHomeAnimal());
+		
+		if(pushok.getIsHomeAnimal() == true){
+		    System.out.println("Животное является домашним.");
+		}
+		else{
+		    System.out.println("Не вяляется домашним животным.");
+		}
 	}
 }

@@ -4,6 +4,8 @@ public class Cat {
 	public int age;
 	public String nickname;
 	double money;
+	public String initials;
+	boolean homeAnimal;
 
 	public Cat() {
 
@@ -45,5 +47,21 @@ public class Cat {
 
 	public int getAge() {
 		return age;
+	}
+
+	public void setInitials(String initials) {
+		this.initials = initials;
+	}
+	
+	public String getInitials()	{
+		return initials;
+	}
+
+	public void setIsHomeAnimal(boolean homeAnimal) {
+		this.homeAnimal = homeAnimal;
+	}
+	
+	public boolean getIsHomeAnimal()	{
+		return homeAnimal;
 	}
 }
