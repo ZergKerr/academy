@@ -27,9 +27,8 @@ public class Task2_SwithOutput {
 			System.out.println("Square " + datavalue + " is equal to " + (f * f));
 			break;
 		case "char":
-			char c = datavalue.charAt(0);
-			int cAscii = (int) c;
-			System.out.println("The ASCII value of a " + datavalue + " is: " + cAscii);
+			char c = (char) datavalue.charAt(0);
+			System.out.println("The ASCII value of a " + datavalue + " is: " + (int) c);
 			break;
 		case "string":
 			System.out.println("Hello " + datavalue);
