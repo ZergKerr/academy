@@ -15,20 +15,20 @@ public class Task2_SwithOutput {
 
 		switch (datatype) {
 		case "int":
-			int i = Integer.parseInt(datavalue.trim());
+			int i = Integer.parseInt(datavalue);
 			System.out.printf("The remain of divide " + i + " by 2 is equal to %d", (i % 2));
 			break;
 		case "double":
-			double d = Double.parseDouble(datavalue.trim());
+			double d = Double.parseDouble(datavalue);
 			System.out.println("70% of " + datavalue + " is equal to " + (d * 0.7));
 			break;
 		case "float":
-			float f = Float.parseFloat(datavalue.trim());
+			float f = Float.parseFloat(datavalue);
 			System.out.println("Square " + datavalue + " is equal to " + (f * f));
 			break;
 		case "char":
 			char c = (char) datavalue.charAt(0);
-			System.out.println("The ASCII value of a " + datavalue + " is: " + (int) c);
+			System.out.println("The Unicode value of a " + datavalue + " is: " + (int) c);
 			break;
 		case "string":
 			System.out.println("Hello " + datavalue);
