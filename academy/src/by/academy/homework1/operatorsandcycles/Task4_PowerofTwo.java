@@ -1,4 +1,4 @@
-package by.academy.operatorsandcycles;
+package by.academy.homework1.operatorsandcycles;
 
 public class Task4_PowerofTwo {
 

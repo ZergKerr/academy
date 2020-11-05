@@ -2,7 +2,7 @@ package by.academy.lesson3;
 
 import java.util.Scanner;
 
-public class Task3_WeirdOrNot {
+public class Task3_EvenOrNot {
 
 	public static void main(String[] args) {
 
@@ -12,6 +12,6 @@ public class Task3_WeirdOrNot {
 		in.close();
 
 		System.out.println(
-				number % 2 == 0 ? "Inputed number" + number + " is even." : "Inputed number" + number + " is odd.");
+				number % 2 == 0 ? "Inputed number " + number + " is even." : "Inputed number" + number + " is odd.");
 	}
 }

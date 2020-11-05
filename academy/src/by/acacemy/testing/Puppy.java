@@ -30,5 +30,9 @@ public class Puppy {
 
 		/* Получение переменной экземпляра класса. */
 		System.out.println("Значение переменной:" + myPuppy.puppyAge);
+		
+		
+		int random_number1 = (int) (Math.random() * 100);
+		System.out.println(random_number1);
 	}
 }

@@ -1,13 +1,13 @@
-package by.acacemy.testing;
+package by.academy.lesson4;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class CyclesandMassives {
-
+public class Task9_MassiveSumAndAverage {
+	
 	public static void main(String... args) {
-		int arrayLength = 0;
+
+		int arrayLength = 0, sum = 0, counter = 0;
 		Scanner in = new Scanner(System.in);
 		System.out.print("Input array length: ");
 		if (in.hasNextInt()) {
@@ -22,19 +22,20 @@ public class CyclesandMassives {
 			System.out.println("Некорректный размер массива. Перезапустите программу и попробуйте снова!");
 			System.exit(0);
 		}
-
 		Random rand = new Random();
 		int[] array = new int[arrayLength];
 		System.out.println("Creating array:");
 		for (int i = 0; i < array.length; i++) {
-			array[i] = rand.nextInt(100 + 100) - 100;  // rand.nextInt(max - min) + min; - add numbers to array from specific range
-			System.out.print(array[i] + "\t");
+			array[i] = rand.nextInt(100 + 100) - 100;
+			System.out.print(array[i] + " ");
+			sum = sum + array[i];
 		}
-		System.out.println("\nSorted array:");
-		Arrays.sort(array);
-		System.out.println("\n");
-		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i] + "\t");
-		}
+			int average = sum / array.length;
+			System.out.println("\nIn the array there are following elements that are less than array average " + average + ":");
+			for (int i = 0; i < array.length; i++) {
+				if (array[i] < average) {
+					System.out.print(array[i] + " ");
+				}
+			}
 	}
 }
