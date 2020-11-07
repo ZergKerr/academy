@@ -30,9 +30,19 @@ public class Puppy {
 
 		/* Получение переменной экземпляра класса. */
 		System.out.println("Значение переменной:" + myPuppy.puppyAge);
+
+		String s = "Hello world";
+		int a = s.length();
+		System.out.println(a);
+
+		String str1 = "hello";
+		String str2 = "Hello";
+		System.out.println(str1.equalsIgnoreCase(str2));
+		System.out.println(str1.compareTo(str2));
 		
+		StringBuilder str3 = new StringBuilder("This is a test.");
+		System.out.println(str3.length());
+		System.out.println(str3.capacity());
 		
-		int random_number1 = (int) (Math.random() * 100);
-		System.out.println(random_number1);
 	}
 }
